@@ -3,6 +3,190 @@
   margin: 0;
 }
 
+@media only screen and(min-width: 769px) {
+  .message {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+
+  .name {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  .sendMessage {
+    display: absolute;
+    bottom: 0;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 16px;
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .input {
+    flex: 1;
+    padding: 8px 12px;
+    margin-right: 16px;
+    font-size: 16px;
+    border: none;
+    background-color: #eaeaea;
+    border-radius: 4px;
+    outline: none;
+  }
+
+  .send {
+    padding: 8px 16px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #0077cc;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .send:hover {
+    background-color: #005fa3;
+  }
+
+  .alert {
+    position: relative;
+    padding: 1em;
+    background-color: black;
+    color: white;
+    text-align: center;
+  }
+
+  /* Glavni element */
+  .create-user-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f7f7f7;
+  }
+
+  /* Naslov */
+  .create-user-container h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 2rem;
+  }
+
+  /* Obrazec za ustvarjanje računa */
+  .create-user-container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+    width: 50%;
+    max-width: 500px;
+  }
+
+  /* Vhodno polje */
+  .create-user-container input {
+    padding: 1rem;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 1rem;
+    width: 100%;
+  }
+
+  /* Gumb */
+  .create-user-container button {
+    background-color: #007aff;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  .create-user-container button:hover {
+    background-color: #0061a9;
+  }
+
+  /* Povezava za prijavo */
+  .create-user-container a {
+    color: #ffffff;
+    margin-top: 1rem;
+    text-decoration: none;
+    font-size: 1.1rem;
+  }
+
+  /*Signindirection*/
+  .create-user-container .signInDirection {
+    background-color: #007aff;
+    color: #fff;
+    font-size: 1rem;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    width: 15%;
+    text-align: center;
+    transition: background-color 0.3s ease-in-out;
+    margin-top: 2.5rem;
+  }
+
+  .create-user-container .signInDirection:hover {
+    background-color: #0061a9;
+  }
+
+  /*Navbar*/
+  .navbar {
+    position: relative;
+    align-items: center;
+    background-color: #007aff;
+    color: #fff;
+    padding: 10px;
+    height: 50px;
+  }
+
+  .navbar h1 {
+    font-size: 2em;
+    font-weight: bold;
+    margin-top: 5px;
+  }
+
+  .navbar h3 {
+    position: absolute;
+    font-size: 1.2em;
+    right: 10rem;
+    margin-top: -28px;
+  }
+
+  .signOutButton {
+    position: absolute;
+    background-color: #fff;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    right: 10px;
+    margin-top: -35px;
+  }
+
+  .signOutButton:hover {
+    background-color: #f2f2f2;
+  }
+}
+
 .message {
   background-color: #f0f0f0;
   border-radius: 10px;
@@ -183,4 +367,187 @@
 
 .signOutButton:hover {
   background-color: #f2f2f2;
+}
+
+/*     ZA TELEFON    */
+
+@media only screen and (max-width: 500px) {
+  .message {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+
+  .name {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  .sendMessage {
+    display: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 16px;
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .input {
+    flex: 1;
+    padding: 8px 12px;
+    margin-right: 16px;
+    font-size: 16px;
+    border: none;
+    background-color: #eaeaea;
+    border-radius: 4px;
+    outline: none;
+  }
+
+  .send {
+    padding: 8px 16px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #0077cc;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .send:hover {
+    background-color: #005fa3;
+  }
+
+  .alert {
+    position: relative;
+    padding: 1em;
+    background-color: black;
+    color: white;
+    text-align: center;
+  }
+
+  /* Glavni element */
+  .create-user-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f7f7f7;
+  }
+
+  /* Naslov */
+  .create-user-container h1 {
+    font-size: 2.2rem;
+    color: #333;
+    margin-bottom: 2rem;
+  }
+
+  /* Obrazec za ustvarjanje računa */
+  .create-user-container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+    width: 50%;
+  }
+
+  /* Vhodno polje */
+  .create-user-container input {
+    padding: 1rem;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 1rem;
+    width: 100%;
+  }
+
+  /* Gumb */
+  .create-user-container button {
+    background-color: #007aff;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 0.6rem;
+    border: none;
+    border-radius: 5px;
+    width: 60%;
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  .create-user-container button:hover {
+    background-color: #0061a9;
+  }
+
+  /* Povezava za prijavo */
+  .create-user-container a {
+    color: #ffffff;
+    margin-top: 1rem;
+    text-decoration: none;
+    font-size: 1.1rem;
+  }
+
+  /*Signindirection*/
+  .create-user-container .signInDirection {
+    background-color: #007aff;
+    color: #fff;
+    font-size: 1rem;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    width: 30%;
+    text-align: center;
+    transition: background-color 0.3s ease-in-out;
+    margin-top: 2.5rem;
+  }
+
+  .create-user-container .signInDirection:hover {
+    background-color: #0061a9;
+  }
+
+  /*Navbar*/
+  .navbar {
+    position: relative;
+    align-items: center;
+    background-color: #007aff;
+    color: #fff;
+    padding: 10px;
+    height: 50px;
+  }
+
+  .navbar h1 {
+    font-size: 2em;
+    font-weight: bold;
+    margin-top: 5px;
+  }
+
+  .navbar h3 {
+    position: absolute;
+    font-size: 1em;
+    right: 7.2rem;
+    margin-top: -28px;
+  }
+
+  .signOutButton {
+    position: absolute;
+    background-color: #fff;
+    color: #333;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    right: 10px;
+    align-items: center;
+  }
+
+  .signOutButton:hover {
+    background-color: #f2f2f2;
+  }
 }
