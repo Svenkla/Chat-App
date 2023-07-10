@@ -27,6 +27,7 @@ const SendMessage = () => {
             className="input"
             value={sendMessage}
             onChange={(e) => setSendMessage(e.target.value)}
+            required
           />
           <button type="submit" className="send">
             Send

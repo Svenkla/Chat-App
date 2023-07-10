@@ -8,17 +8,23 @@ import SendMessage from "./SendMessage";
 
 const Chat = () => {
   const [messages, setMessages] = useState([]);
-
-  const scroll = useRef();
+  const [sortOrder, setSortOrder] = useState("asc");
 
   const getMessages = async () => {
-    await getDocs(collection(db, "messages")).then((querySnapshot) => {
-      const newData = querySnapshot.docs.map((doc) => ({
-        ...doc.data(),
-        id: doc.id,
-      }));
-      setMessages(newData);
-    });
+    try {
+      const colRef = collection(db, "messages");
+      const q = query(colRef, orderBy("timestamp", sortOrder));
+
+      onSnapshot(q, (snapshot) => {
+        const x = [];
+        snapshot.docs.forEach((doc) => {
+          x.push(doc.data());
+        });
+        setMessages(x);
+      });
+    } catch (error) {
+      console.error("Napaka pri pridobivanju podatkov:", error);
+    }
   };
 
   useEffect(() => {
