@@ -383,7 +383,7 @@
   .sendMessage {
     display: absolute;
     bottom: 0;
-    width: 100%;
+    width: 80%;
     text-align: center;
     padding: 16px;
     background-color: #f7f7f7;
